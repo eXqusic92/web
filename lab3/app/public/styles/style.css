@@ -1,0 +1,355 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #32444B;
+  min-height: 100%;
+}
+
+.sidebar {
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  background-color: #B6CDB1;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  font-family: "Georgia", serif;
+}
+
+.sidebar a {
+  display: block;
+  padding: 5%;
+  color: #32444B;
+  text-decoration: none;
+}
+
+.sidebar a:hover, .sidebar a:active {
+  background-color: #F0F6F7;
+  color: #32444B;
+}
+
+.mainpart {
+  padding: 0px 40px;
+  background-color: #32444B;
+  text-align: center;
+  height: 150%;
+}
+
+.moveaside {
+  margin-left: 200px;
+}
+
+.mainpart a {
+  text-decoration: none;
+}
+
+.mainpart input.search {
+  width: 78%;
+  height: 50px;
+  font-size: 25px;
+  border: none;
+  border-bottom: 2px solid #6B8B8D;
+  overflow: scroll;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.search-button {
+  background-color: #B6CDB1;
+  height: 52px;
+  width: 20%;
+  border: none;
+  border-bottom: 2px solid #6B8B8D;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  float: left;
+  font-size: 20px;
+}
+
+.search-form {
+  margin-left: 1%;
+  display: inline-block;
+  width: 70%;
+  max-width: 700px;
+  margin-bottom: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mainpart h1, .mainpart h2, .mainpart h3 {
+  color: #B6CDB1;
+  margin-top: 0;
+  font-size: 8vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-top: 10px;
+}
+
+.mainpart h2 {
+  padding-top: 10px;
+  font-size: 6vw;
+  margin-bottom: 0;
+}
+
+.mainpart h3 {
+  font-size: 3vw;
+}
+
+.mainpart input.search:active {
+  background-color: #32444B;
+}
+
+.objectholder {
+  padding: 1%;
+}
+
+.object, .forminput {
+  word-wrap: break-word;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  padding: 4px;
+  display: inline-block;
+  background-color: #F0F6F7;
+  -webkit-box-shadow: 4px 4px #B6CDB1;
+  box-shadow: 4px 4px #B6CDB1;
+  height: 50px;
+  display: block;
+  text-align: left;
+  max-width: 700px;
+  font-family: "Georgia", serif;
+  width: 100%;
+}
+
+.object img, .forminput img {
+  border-radius: 2px;
+  max-width: 50px;
+  max-height: 50px;
+  vertical-align: middle;
+}
+
+.squarediv {
+  border-radius: 2px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #B6CDB1;
+}
+
+.text {
+  display: inline-block;
+  width: 100%;
+  max-width: 50%;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+
+.text a {
+  color: #32444B;
+  text-decoration: none;
+}
+
+.object span, .forminput span {
+  word-wrap: break-word;
+  overflow: hidden;
+  display: block;
+  margin-left: 5px;
+  max-height: 22px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.object span:hover, .forminput span:hover {
+  overflow: visible;
+}
+
+.object span.time, .forminput span.time, .object span.artist, .forminput span.artist {
+  font-size: 12px;
+}
+
+.object span.name, .forminput span.name {
+  font-size: 18px;
+}
+
+.squarebutton {
+  font-size: 35px;
+  vertical-align: middle;
+  position: static;
+  margin-right: 5px;
+  width: 48px;
+  float: right;
+  height: 48px;
+  background-color: #B6CDB1;
+  border: 1px;
+  border-style: solid;
+  border-color: #32444B;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border-radius: 3px;
+  line-height: 42px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #32444B;
+  min-height: 100px;
+  margin-top: 100px;
+  display: block;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100%;
+  left: 0;
+  position: fixed;
+}
+
+.listnavigation {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.navigationbutton {
+  border-radius: 2px;
+  font-size: 25px;
+  background-color: #F0F6F7;
+  padding: 10px 20px 10px 20px;
+  margin: 10px 10px 10px 10px;
+  text-decoration: none;
+  color: #32444B;
+}
+
+.enter {
+  border-radius: 4px;
+  width: 90%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 300px;
+  min-height: 40px;
+  margin-top: 20px;
+  border: none;
+  -webkit-box-shadow: 4px 4px #6B8B8D;
+  box-shadow: 4px 4px #6B8B8D;
+  background-color: #F9D268;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.enter:hover {
+  background-color: #6B8B8D;
+}
+
+.enter:active {
+  -webkit-box-shadow: 2px 2px #6B8B8D;
+  box-shadow: 2px 2px #6B8B8D;
+}
+
+.forget {
+  color: #F0F6F7;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+
+.forminput {
+  overflow: scroll;
+  font-size: 20px;
+}
+
+.checkbox-text {
+  word-wrap: break-word;
+  overflow: hidden;
+  margin-left: 5px;
+  max-height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 20px;
+  color: #F0F6F7;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #e33d3d;
+  color: #F0F6F7;
+  display: none;
+  margin-bottom: 20px;
+}
+
+.alert-shown {
+  padding: 20px;
+  background-color: #e33d3d;
+  color: #F0F6F7;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: #F0F6F7;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  .mainpart {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  .listnavigation {
+    display: -ms-grid;
+    display: grid;
+  }
+  .search-button, .mainpart input.search {
+    width: 100%;
+  }
+  .search-form {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .object, .forminput {
+    overflow: scroll;
+  }
+  .object img, .forminput img, .squarediv {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
